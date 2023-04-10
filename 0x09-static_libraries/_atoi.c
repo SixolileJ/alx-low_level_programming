@@ -5,7 +5,7 @@
  * @str: input string.
  * Return: no return.
  */
-void _puts(char *s)
+int _atoi(char *s)
 {
 	int count = 0;
 
