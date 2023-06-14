@@ -5,18 +5,14 @@
  * @str: input string.
  * Return: no return.
  */
-void _puts(char *s)
+void _puts(char *str)
 {
-	int count = 0;
+	int i;
 
-	while (count >= 0)
+	for (i = 0; *str != '\0'; i++)
 	{
-		if (s[count] == '\0')
-		{
-			_putchar('\n');
-			break;
-		}
-		_putchar(s[count]);
-		count++;
+		_putchar(*str);
+		str++;
 	}
+	_putchar('\n');
 }
